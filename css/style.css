@@ -1,0 +1,224 @@
+html, ul, li, body {
+  margin: 0;
+	padding: 0;
+}
+.header_backgraund{
+	background-image: url(backgraund_1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+	min-height: 100vh;
+}
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.377);	
+}
+header h1{
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.4vw;
+	color: white;
+}
+.portfolio_foto_skills {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.portfolio_foto {
+	width: 13%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
+.portfolio_foto img {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 85%;
+	transition: all ease 1s;
+	overflow: hidden;
+}
+.portfolio_foto img:hover {
+	-webkit-transform: scale(3.2);
+  -ms-transform: scale(4.2);
+	transform: scale(1.5);
+}
+.portfolio_foto p {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.3vw;
+	color: white;
+	margin:1%;
+}
+.portfolio_skills {
+	width: 20%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mySkills {
+	display: flex;
+}
+.mySkills h2 {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.4vw;
+	color: white;
+}
+.mySkills2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 10%;
+}
+.mySkills2 li {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.1vw;
+	color: white;
+}
+.project {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.project_header {
+	display:flex;
+	text-align: center;
+	display: inline;
+}
+.project_header p {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.3vw;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.377);	
+}
+.project_galery {
+	margin: 1% 5% 1% 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	align-items: center;
+	justify-items: center;
+	grid-auto-rows: minmax(100% auto);	
+}
+.project_block {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.377);	
+}
+.project_block a{
+	display: flex;
+	justify-content: center;
+}
+.project_block img {
+	width: 40%;
+	transition: all ease 1s;
+	overflow: hidden;
+}
+.project_block img:hover {
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(4.2);
+	transform: scale(2);
+	cursor: pointer;
+}
+.contact {
+	display: flex;
+}
+.Header_contact {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Header_contact p{
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.3vw;
+	color: white;
+}
+.contact_pict{
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.pict a{
+	display: flex;
+	justify-content: flex-start;
+}
+.pict p {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1vw;
+	color: white;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.377);	
+}
+footer p {
+	font-family: Bradley Hand, cursive;
+	font-weight: 500;
+	font-size: 1.2vw;
+	color: white;
+}
+@media screen and (max-width:600px) {
+	header h1{
+		font-size: 5.4vw;
+	}
+	.portfolio_foto {
+		width: 33%;
+		margin-top: 0%;
+		margin-bottom: 0%;
+	}
+	.portfolio_foto p {
+		font-size: 3.3vw;
+	}
+	.mySkills h2 {
+		font-size: 4.4vw;
+		margin-left: 80%;
+	}
+	.mySkills2 {
+		margin-left: 100%;
+	}
+	.mySkills2 li {
+		font-size: 3vw;
+	}
+	.project_header p {
+		font-size: 3.3vw;
+	}
+	.project_galery {
+		margin: 1% 1% 1% 1%;
+		grid-template-columns: 1fr 1fr;
+	}
+	.project_block img {
+		width: 60%;
+	}
+	.Header_contact p{
+		font-size: 3.3vw;
+	}
+	.pict p {
+		font-family: Bradley Hand, cursive;
+		font-weight: 500;
+		font-size: 2vw;
+		color: white;
+	}
+	footer p {
+		font-size: 3.2vw;
+	}
+}
